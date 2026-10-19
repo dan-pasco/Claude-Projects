@@ -12,14 +12,33 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: #f4f4f4;
+      background: #0b1026; /* same dark night sky as the Hurray page */
     }
-    h1 {
-      color: #333;
+    button {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 16px 40px;
+      color: #fff;
+      background: #2563eb;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
     }
   </style>
 </head>
 <body>
-  <h1>Hello Dan</h1>
+  <button id="helloButton">Hello Dan</button>
+
+  <script>
+    // When the button is clicked, go to the Hurray page
+    const helloButton = document.getElementById("helloButton");
+
+    helloButton.addEventListener("click", function () {
+      window.location.href = "hurray.html";
+    });
+  </script>
 </body>
 </html>
