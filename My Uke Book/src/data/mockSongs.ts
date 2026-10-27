@@ -17,7 +17,7 @@ export const mockSongs: Song[] = [
   { id: "song-007", title: "Hey, Soul Sister", artist: "Train", key: "C", createdAt: "2026-10-02T10:00:00Z", lastViewedAt: "2026-10-12T17:20:00Z" },
   { id: "song-008", title: "Three Little Birds", artist: "Bob Marley", key: "A", createdAt: "2026-09-28T10:00:00Z" },
   { id: "song-009", title: "Let It Be", artist: "The Beatles", key: "C", createdAt: "2026-09-21T10:00:00Z" },
-  { id: "song-010", title: "Better Together", artist: "Jack Johnson", key: "A", createdAt: "2026-09-14T10:00:00Z" },
+  { id: "song-010", title: "Better Together", artist: "Jack Johnson", createdAt: "2026-09-14T10:00:00Z" },
   { id: "song-011", title: "Over the Rainbow (Instrumental)", createdAt: "2026-09-01T10:00:00Z" },
-  { id: "song-012", title: "You Are My Sunshine", artist: "Traditional", key: "C", createdAt: "2026-08-20T10:00:00Z" },
+  { id: "song-012", title: "You Are My Sunshine", key: "C", createdAt: "2026-08-20T10:00:00Z" },
 ];

@@ -25,3 +25,7 @@ body {
   outline: 3px solid var(--color-forest-600);
   outline-offset: 2px;
 }
+
+header :focus-visible {
+  outline-color: var(--color-cream);
+}
