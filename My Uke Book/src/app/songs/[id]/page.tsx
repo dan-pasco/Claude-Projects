@@ -1,5 +1,5 @@
 import PlaceholderPage from "@/components/PlaceholderPage";
-import { getSongById } from "@/lib/songs";
+import { getArtistLabel, getSongById } from "@/lib/songs";
 
 export default async function SongPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -12,7 +12,7 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
   return (
     <PlaceholderPage
       title={song.title}
-      message={`${song.artist ?? "Unknown artist"}${song.key ? ` · Key: ${song.key}` : ""}. Chords and lyrics are coming soon.`}
+      message={`${getArtistLabel(song)}${song.key ? ` · Key: ${song.key}` : ""}. Chords and lyrics are coming soon.`}
     />
   );
 }

@@ -13,10 +13,16 @@ export function getRecentlyAdded(songs: Song[] = mockSongs, limit = LIST_SIZE): 
 }
 
 export function getRecentlyViewed(songs: Song[] = mockSongs, limit = LIST_SIZE): Song[] {
+  const seen = new Set<string>();
   return songs
     .filter((song) => song.lastViewedAt)
     .sort((a, b) => b.lastViewedAt!.localeCompare(a.lastViewedAt!))
+    .filter((song) => !seen.has(song.id) && seen.add(song.id))
     .slice(0, limit);
+}
+
+export function getArtistLabel(song: Song): string {
+  return song.artist?.trim() || "Unknown artist";
 }
 
 export function searchSongs(query: string, songs: Song[] = mockSongs): Song[] {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Music } from "lucide-react";
 import type { Song } from "@/data/mockSongs";
+import { getArtistLabel } from "@/lib/songs";
 
 export default function SongCard({ song }: { song: Song }) {
   return (
@@ -14,7 +15,7 @@ export default function SongCard({ song }: { song: Song }) {
       <span className="min-w-0 flex-1">
         <span className="block truncate font-semibold text-forest-900">{song.title}</span>
         <span className="block truncate text-sm text-ink/70">
-          {song.artist ?? "Unknown artist"}
+          {getArtistLabel(song)}
         </span>
       </span>
       {song.key && (

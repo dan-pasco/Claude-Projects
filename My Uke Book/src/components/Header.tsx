@@ -19,6 +19,7 @@ export default function Header() {
           </Link>
           <Link
             href="/add-song"
+            data-filled
             className="flex items-center gap-1.5 rounded-full bg-cream px-4 py-2 text-sm font-semibold text-forest-800 hover:bg-cream-dark"
           >
             <Plus aria-hidden className="h-4 w-4" />

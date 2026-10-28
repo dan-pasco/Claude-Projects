@@ -29,3 +29,7 @@ body {
 header :focus-visible {
   outline-color: var(--color-cream);
 }
+
+header [data-filled]:focus-visible {
+  outline-color: var(--color-sage-300);
+}

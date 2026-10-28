@@ -15,9 +15,9 @@ Landing page, placeholder routes and mock data are built, and `npm run build` pa
 ## Technology
 | Component | Technology | Purpose |
 |---|---|---|
-| Framework | Next.js 16 (App Router) | Page structure and routing |
-| Language | TypeScript 7 | Type-safe components and song data |
-| Styling | Tailwind CSS 4 | Responsive design |
+| Framework | Next.js (App Router) | Page structure and routing |
+| Language | TypeScript | Type-safe components and song data |
+| Styling | Tailwind CSS | Responsive design |
 | Icons | Lucide React | Search, music, library and navigation icons |
 | Data | Local mock data | Populate the page without connections |
 | State | React 19 `useState` | Search input and local UI interactions |
